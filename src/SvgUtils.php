@@ -8,6 +8,10 @@ use ipl\Html\ValidHtml;
 
 class SvgUtils
 {
+    /**
+     * @param ValidHtml $svg
+     * @return never-return
+     */
     public static function sendSvg(ValidHtml $svg)
     {
         header('Content-Type: image/svg+xml');
